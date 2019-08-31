@@ -3,7 +3,7 @@
         <span :id="prevHandler">
             <slot name="prev"></slot>
         </span>
-        <div :id="elementHandle" :class="['owl-carousel', 'owl-theme']">
+        <div :id="elementHandle" :class="customClass">
             <slot></slot>
         </div>
         <span :id="nextHandler">
@@ -26,6 +26,9 @@
           }
       },
       props: {
+        customClass: {
+           default: ['owl-carousel', 'owl-theme']
+        },
         items : {
             default: 3
         },
