@@ -45,7 +45,7 @@
             default: true
         },
         navText : {
-            default: [&#x27;next&#x27;,&#x27;prev&#x27;]
+            default: ['next', 'prev']
         },
         autoplay : {
             default: false
