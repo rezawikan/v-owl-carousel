@@ -28,7 +28,7 @@
       props: {
         customClass: {
            type: Array,
-           default: ['owl-carousel', 'owl-theme']
+           default: () => ['owl-carousel', 'owl-theme']
         },
         items : {
             default: 3
@@ -47,7 +47,7 @@
         },
         navText : {
             type: Array,
-            default: ['next', 'prev']
+            default: () => ['next', 'prev']
         },
         autoplay : {
             default: false
